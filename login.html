@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Bangalore Smart City</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Bangalore Smart City Logo">
+    <nav>
+      <a href="ca3.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="login">
+    <h1>Citizen Login</h1>
+    <form id="citizen-login-form" onsubmit="validateLogin(event)">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+      
+      <button type="submit">Login</button>
+    </form>
+
+    <h2>Don't have an account? <a href="signup.html">Sign Up</a></h2>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

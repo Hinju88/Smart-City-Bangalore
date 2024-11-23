@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Bangalore Smart City</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Bangalore Smart City Logo">
+    <nav>
+      <a href="ca3.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="login">
+    <h1>Administrator Login</h1>
+    <form id="admin-login-form" onsubmit="validateAdminLogin(event)">
+      <label for="gov-id">Government ID:</label>
+      <input type="text" id="gov-id" name="gov-id" placeholder="Enter your Gov ID" required minlength="6">
+      
+      <label for="admin-password">Password:</label>
+      <input type="password" id="admin-password" name="admin-password" placeholder="Enter your password" required>
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
